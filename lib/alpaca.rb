@@ -1,5 +1,15 @@
-require "alpaca/version"
+require 'alpaca/version'
 require 'alpaca/configuration'
+require 'alpaca/api_client'
+
+require 'time'
+
+# APIs
+require 'alpaca/api/market_data'
+
+# Models
+require 'alpaca/models/data/historical/historical'
+require 'alpaca/models/data/quote'
 
 module Alpaca
   class Error < StandardError; end
