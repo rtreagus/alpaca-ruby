@@ -5,7 +5,7 @@ module Alpaca
     end
 
     def quote(symbol:, options: {})
-      request = Data::Quote.new(symbol: symbol, options: options)
+      request = Quote.new(symbol: symbol, options: options)
       call_api(request)
     end
 

@@ -9,7 +9,7 @@ require 'alpaca/api/market_data'
 
 # Models
 require 'alpaca/models/data/historical/historical'
-require 'alpaca/models/data/quote'
+require 'alpaca/models/data/historical/quote'
 
 module Alpaca
   class Error < StandardError; end
