@@ -10,19 +10,27 @@ module Alpaca
     # Defines url base path
     attr_accessor :base_path
 
-    # Defines account api id and secret
+    # Defines account api id
     attr_accessor :api_key_id
 
+    # Defines account api id
     attr_accessor :api_secret
 
-    # Define paper trading
+    # Enables paper trading when placing orders
     attr_accessor :enable_testing
 
+    # Defines API version
+    attr_reader :api_version
+
+    # Defines Client
+    attr_reader :client
+
     def initialize
-      @scheme = 'https'
+      @scheme = 'https://'
       @enable_testing = false
-      @host = enable_testing ? 'paper-api.alpaca.markets' : 'data.alpaca.markets'
-      @base_path = '/v2/stocks/'
+      @host = 'data.alpaca.markets'
+      @api_version = 'v2'
+      @base_path = 'stocks'
       @api_key_id = ''
       @api_secret = ''
 

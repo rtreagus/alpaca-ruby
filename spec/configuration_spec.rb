@@ -13,7 +13,7 @@ RSpec.describe Alpaca::Configuration do
     end
 
     it 'sets the base path' do
-      expect(config.base_path).to eq('/v2/stocks/')
+      expect(config.base_path).to eq('stocks')
     end
 
     it 'sets the host' do
